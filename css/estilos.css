@@ -1,7 +1,7 @@
 body{
     background: linear-gradient(to right, #185a9d, #43cea2);
 }
-#login{
+#login, #registro{
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
@@ -10,4 +10,7 @@ body{
     background: #fff;
     opacity: 80%;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,.5);
+}
+#link{
+    text-align: right;
 }
