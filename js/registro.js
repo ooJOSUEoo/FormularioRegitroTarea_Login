@@ -15,8 +15,23 @@ function registro(e) {
     let userVal = user.value;
     let passVal = pass.value;
 
-    if (nombreVal = '' || emailVal == '' || userVal == '' || passVal == '') {
+    if (nombreVa = '' || emailVal == '' || userVal == '' || passVal == '') {
         return;
     }
-    console.log('validando datos!');
+
+    const usuario = {
+        nombre: nombreVal,
+        email: emailVal,
+        user: userVal,
+        pass: passVal
+    }
+
+    localStorage.setItem('usuario', JSON.stringify(usuario));
+
+    nombre.value = '';
+    email.value = '';
+    user.value = '';
+    pass.value = '';
+
+    console.log('hisdhc')
 }
